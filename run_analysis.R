@@ -63,8 +63,7 @@ combined$activity <- factor(combined$activity,
                  labels=c("Walking","Walking Upstairs", "Walking Downstairs", "Sitting", "Standing", "Laying"))
 
 
-## STEP 5: Creates a second, independent tidy data set with the
-## average of each variable for each activity and each subject.
+## STEP 5: Creates an  independent tidy data set with the average of each variable for each activity and each subject.
 
 # create the tidy data set
 melted <- melt(combined, id=c("subjectID","activity"))
