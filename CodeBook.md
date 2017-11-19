@@ -77,7 +77,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 Signals were used to estimate variables of the feature vector for each pattern: [XYZ] is used to denote 3-axial signals in the X, Y and Z directions.
 
-For each measurement  only mean and standard deviation are extracted. 
+For each measurement  only mean and standard deviation are extracted.
 
 * SubjectID
 * Class_Name
@@ -179,39 +179,11 @@ Data	subjectTest.txt	yTest.txt	xTest.txt
 Data	subjectTrain.txt	yTrain.txt	xTrain.txt
 Requirements & Details of Transformations through run_analysis.R script
 
-## Requirements
-
-run_analysis.R script has the following requirements to perform transformation on UCI HAR Dataset.
-
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive activity names.
-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-Detailed Functions of run_analysis.R Script
-
-Downloads the dataset from the URL mentioned above and unzips it to create UCI HAR Dataset folder
-Imports "test" and "train" datsets and creates data frames from then and then Merges the training and the test sets
-to create one data frame.
-Extracts a subset of data with only the measurements on the mean "mean()" and standard deviation "std()" for each measurement. Also excludes meanFreq()-X measurements or angle measurements where the term mean exists resulting in
-66 measurement variables.
-Updates the variable names in dataframe variable names for data fame to improve readability
-Appropriately labels the data set with descriptive activity names in place of activity Ids
-Reshapes dataset to create a data frame with average of each measurement variable for each activity and each subject
-Writes new tidy data frame to a text file to create the required tidy data set file of 180 observations and 68 columns (2 columns for activityName and subjectID and 66 columns for measurement variables)
-Transformations Performed on the original dataset.
-
-Merging the training and the test sets to create one data set.
-
-
-
 
 ## Transformations
 
 Training and test data set rows were appended and then a unified data set created from the source files.
 
 Measurements were extracted for mean, standard deviation for each measurement.
-
-variable/column names were labeled with descriptive cleaner names.
 
 Results were output as an independent tidy data set at  `tidy.csv`
