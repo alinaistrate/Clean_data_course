@@ -172,12 +172,6 @@ Test Dataset - xTest.txt: 2947 rows of 561 measurement variables. These are meas
 
 Training Dataset - xTrain.txt: 7352 rows of 561 measurement variables. These are measurement variables listed in features.txt - yTrain.txt: 7352 rows of 1 variables. This is the activity Identifier - subjectTrain.txt: 7352 rows of 1 variable (subject Identifier)
 
-## Map of aggregated Data
-
-Variable Names	subjectId	activityId	(variable names from features.txt)
-Data	subjectTest.txt	yTest.txt	xTest.txt
-Data	subjectTrain.txt	yTrain.txt	xTrain.txt
-Requirements & Details of Transformations through run_analysis.R script
 
 
 ## Transformations
