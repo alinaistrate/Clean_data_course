@@ -8,7 +8,7 @@ This repository hosts the R code and documentation files for the Data Science's 
 
 `CodeBook.md`  gives a basic description of the data set as well as the transformations performed to clean up the data.
 
-`run_analysis.R` contains all the code to perform the analyses described in the 5 steps. They can be launched in RStudio by just importing the file.
+`run_analysis.R` contains all the code to perform the analyses described  by the requirements of the project (see below).
 
 The equirements of the project were:
 
