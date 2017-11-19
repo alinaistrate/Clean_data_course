@@ -162,18 +162,6 @@ For each measurement  only mean and standard deviation are extracted.
 * fBodyBodyGyroJerkMag_meanFreq
 
 
-
-
-Details about Files to be used in analysis from Source Data
-
-Common Files - features.txt: 561 rows of 2 varibles (feature Identifier and feature Name) -  activity_labels.txt: 6 rows of 2 variables (activity identifier and activity name)
-
-Test Dataset - xTest.txt: 2947 rows of 561 measurement variables. These are measurement variables listed in features.txt - yTest.txt: 2947 rows of 1 variables. This is the activity Identifier -  subjectTest.txt: 2497 rows of 1 variable (subject Identifier)
-
-Training Dataset - xTrain.txt: 7352 rows of 561 measurement variables. These are measurement variables listed in features.txt - yTrain.txt: 7352 rows of 1 variables. This is the activity Identifier - subjectTrain.txt: 7352 rows of 1 variable (subject Identifier)
-
-
-
 ## Transformations
 
 Training and test data set rows were appended and then a unified data set created from the source files.

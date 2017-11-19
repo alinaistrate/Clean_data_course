@@ -66,8 +66,8 @@ combined$activity <- factor(combined$activity,
 ## STEP 5: Creates an  independent tidy data set with the average of each variable for each activity and each subject.
 
 # create the tidy data set
-melted <- melt(combined, id=c("subjectID","activity"))
-tidy <- dcast(melted, subjectID+activity ~ variable, mean)
+melt_data <- melt(combined, id=c("subjectID","activity"))
+tidy <- dcast(melt_data, subjectID+activity ~ variable, mean)
 
 # write the tidy data set to a file
 write.csv(tidy, "tidy.csv", row.names=FALSE)
