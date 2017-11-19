@@ -1,12 +1,12 @@
-CodeBook for the tidy dataset
+#CodeBook for the tidy dataset
 =============================
 
-Data source
+##Data source
 -----------
 This dataset is derived from the "Human Activity Recognition Using Smartphones Data Set"  available here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 
-Experiment description
+##Experiment description
 -----------------
 Note: This section is taken  from the Readme.txt  file of the original dataset
 
@@ -55,13 +55,13 @@ The following files are available for the train and test data. Their description
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
-Notes:
-======
+###Notes:
+
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
 
-### Variables
+## Variables
 
 Variables within the tidy data set are as examined as follows (taken from [1]).
 
@@ -75,7 +75,7 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
 
-Signals were used to estimate variables of the feature vector for each pattern: '*_[XYZ]$' is used to denote 3-axial signals in the X, Y and Z directions.
+Signals were used to estimate variables of the feature vector for each pattern: [XYZ] is used to denote 3-axial signals in the X, Y and Z directions.
 
 For each measurement the mean, stddev, and mean frequency were calculated.
 
@@ -92,14 +92,14 @@ Test Dataset - xTest.txt: 2947 rows of 561 measurement variables. These are meas
 
 Training Dataset - xTrain.txt: 7352 rows of 561 measurement variables. These are measurement variables listed in features.txt - yTrain.txt: 7352 rows of 1 variables. This is the activity Identifier - subjectTrain.txt: 7352 rows of 1 variable (subject Identifier)
 
-Map of aggregated Data
+##Map of aggregated Data
 
 Variable Names	subjectId	activityId	(variable names from features.txt)
 Data	subjectTest.txt	yTest.txt	xTest.txt
 Data	subjectTrain.txt	yTrain.txt	xTrain.txt
 Requirements & Details of Transformations through run_analysis.R script
 
-Requirements
+##Requirements
 
 run_analysis.R script has the following requirements to perform transformation on UCI HAR Dataset.
 
@@ -123,10 +123,10 @@ Transformations Performed on the original dataset.
 
 Merging the training and the test sets to create one data set.
 
-Activities:
 
 
-### Transformations
+
+## Transformations
 
 Training and test data set rows were appended and then a unified data set created from the source files.
 
